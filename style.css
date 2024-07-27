@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html{
+    overflow-x: hidden;
+}
+.logo{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+header{
+    background-image: url(r3.jpg);
+    height: 643px;
+    width: 1366px;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    margin-top:100px ;
+    text-align: center;
+}
+.header-content h2 {
+font-size: 4vmin;
+font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    background: #fc036b;
+    height: 4px;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 5vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ctn{
+    background: #fc036b;
+    padding: 8px 15px ;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*Events */
+section{
+width: 80%;
+margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+/* .row .col img {
+    width: 80%; */
+/* } */
+.row .col1 img {
+    width: 500px;
+    height: 350px;
+    margin-top: 20px;
+}
+.row .col2 img {
+    width: 500px;
+    height: 350px;
+      margin-top: 40px;
+}
+.row .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 4vmin;
+    margin: 20px auto;
+    color: #484872;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #7c7c7c;
+    padding: 20px 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.row .col1 p{
+    padding: 20px;
+}
+.events .ctn {
+    margin-top: 40px;
+    
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(ep3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}   
+.explore-content{
+    width: 60%;
+    padding: 80px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explore-content line {
+    margin-bottom: 50px;
+}
+.explore-content p {
+color: rgb(221, 221, 221);
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding: 20px 50px;
+margin-bottom: 20px;
+}
+.explore-content ctn {
+    margin-top: 40px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    margin: 10px;
+    max-width: 300px;
+}
+.content-col h1 {
+    font-size: 7vmin;
+    color: #484872;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn {
+    margin-left: 150px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 5px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 0px auto;
+}
+/* mobile device */
+@media only screen and (max-width:850px){
+   .menu-btn{
+    display: block;
+   }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30% ;
+    }
+    .nav-links li {
+        margin: 30px auto;
+
+    }
+}
